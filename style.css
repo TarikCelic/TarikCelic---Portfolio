@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(34, 32, 32, 1);
+  font-family: "Josefin Sans";
+  color: #eee;
+  flex-direction: row;
+  height: 90vh;
+  width: 100vw;
+}
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+  font-family: "Josefin Sans";
+  color: rgba(34, 32, 32, 1);
+  flex-direction: row;
+  height: 50vh;
+  width: 100vw;
+}
+p {
+  font-size: 1.3rem;
+}
+h1 {
+  font-size: 3rem;
+}
+.header-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+a {
+  color: #eee;
+  text-decoration: none;
+}
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.project {
+  padding: 20px 30px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eeeeee07;
+  border-left: 4px solid #eee;
+  transition: all 0.2s ease;
+}
+.project:hover {
+  cursor: pointer;
+  border-color: #eee;
+  border-left: 1px solid #eee;
+  transform: translateX(3px);
+}
+img {
+  width: 25px;
+}
+.media {
+  color: rgba(34, 32, 32, 1);
+}
+.contant {
+  padding: 10px 30px;
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
+  border: 1px solid rgba(34, 32, 32, 0.055);
+  transition: all 0.2s ease;
+  border-right: 4px solid rgba(34, 32, 32, 1);
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+.contant:hover {
+  cursor: pointer;
+  border-color: rgba(34, 32, 32, 1);
+  border-right: 1px solid rgba(34, 32, 32, 1);
+  transform: translateX(-3px);
+}
+.contact-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contact-me p {
+  font-size: 1.2rem;
+}
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+  }
+}
